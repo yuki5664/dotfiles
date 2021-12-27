@@ -40,7 +40,7 @@ for formula in ${formulas[@]}; do
 done
 
 for cask_formula in ${cask_formulas[@]}; do
-  brew install __cask ${formula}
+  brew install --cask ${formula}
 done
 
 brew cleanup
