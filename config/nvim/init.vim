@@ -40,8 +40,9 @@ Plug 'pechorin/any-jump.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-" setting for golang
+" setting debug for golang
 Plug 'sebdah/vim-delve'
 
 " colors
