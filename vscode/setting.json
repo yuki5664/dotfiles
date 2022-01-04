@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "go.toolsManagement.autoUpdate": true,
+}
