@@ -15,6 +15,8 @@ formulas=(
 	tree-sitter
 	zsh-completions
 	zsh-git-prompt
+	kubectl
+	kubectx
 )
 
 cask_formulas=(
@@ -31,6 +33,7 @@ cask_formulas=(
 	iterm2
 	notion
 	kindle
+	google-cloud-sdk
 )
 
 brew upgrate

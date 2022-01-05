@@ -43,7 +43,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " setting debug for golang
-Plug 'sebdah/vim-delve'
+" Plug 'sebdah/vim-delve'
 
 " colors
 Plug 'ghifarit53/tokyonight-vim'
