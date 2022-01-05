@@ -17,6 +17,7 @@ formulas=(
 	zsh-git-prompt
 	kubectl
 	kubectx
+	lazydocker
 )
 
 cask_formulas=(
