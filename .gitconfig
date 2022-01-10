@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = tanaka5664
+email = monkey.yebisu.7777@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[fetch]
+       prune = true
+
+[push]
+	default = current
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+
+[mergetool "sourcetree"]
+	trustExitCode = true
+
+[alias]
+    amend = commit --amend
