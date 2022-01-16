@@ -1,15 +1,15 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-name = tanaka5664
-email = monkey.yebisu.7777@gmail.com
+	# Please adapt and uncomment the following lines:
+	name = tanaka5664
+	email = monkey.yebisu.7777@gmail.com
 
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
 
 [fetch]
-       prune = true
+	prune = true
 
 [push]
 	default = current
@@ -21,4 +21,4 @@ email = monkey.yebisu.7777@gmail.com
 	trustExitCode = true
 
 [alias]
-    amend = commit --amend
+	amend = commit --amend
