@@ -41,6 +41,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'jparise/vim-graphql'
 
 " setting debug for golang
 " Plug 'sebdah/vim-delve'
