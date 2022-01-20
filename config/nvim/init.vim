@@ -17,6 +17,7 @@ set shortmess+=c
 
 
 inoremap <silent> jj <ESC>
+nmap <Esc><Esc> :nohl<CR>
 
 let mapleader = "\<space>"
 
