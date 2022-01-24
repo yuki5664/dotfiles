@@ -95,14 +95,6 @@ path=(
   /Library/Apple/usr/bin
 )
 
-# -F でファイル種別の表示
-# -G で色を付ける (GNU/Linux での "--color=auto" と等価)
-alias ls="ls -FG"
-
-alias la="ls -a"
-alias ll="ls -l"
-alias lla="ls -la"
-
 # setting for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
