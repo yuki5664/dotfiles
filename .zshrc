@@ -2,6 +2,9 @@ export CLICOLOR=1
 
 echo hello yuki!
 
+# Load aliases
+source $HOME/aliases.zsh
+
 autoload -Uz compinit && compinit  # Gitの補完を有効化
 
 function left-prompt {
