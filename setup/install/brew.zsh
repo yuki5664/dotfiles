@@ -18,6 +18,7 @@ formulas=(
 	kubectl
 	kubectx
 	lazydocker
+	sops
 )
 
 cask_formulas=(
