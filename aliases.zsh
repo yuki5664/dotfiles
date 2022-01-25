@@ -8,4 +8,4 @@ alias lla="ls -la"
 
 ## doceker
 alias lzd='lazydocker'
-alias dcu='docker compose'
+alias dc='docker compose'
