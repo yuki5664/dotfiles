@@ -8,6 +8,11 @@
       "args": ["server", "-m", "stream"],
       // customize filetypes to your needs
       "filetypes": ["typescript", "typescriptreact", "graphql"]
-    }
-  }
+    },
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform, tf"],
+      "initializationOptions": {},
+      "settings": {}
+    } 
 }

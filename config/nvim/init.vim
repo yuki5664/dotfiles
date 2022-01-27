@@ -44,6 +44,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'jparise/vim-graphql'
 
+" setting terraform
+Plug 'hashivim/vim-terraform'
+
 " setting debug for golang
 " Plug 'sebdah/vim-delve'
 
@@ -111,3 +114,6 @@ endfunction
 
 " setting golang
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
+" setting terraform
+let g:terraform_fmt_on_save = 1

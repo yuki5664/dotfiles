@@ -114,3 +114,10 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
+
+# setting terraform-lsp
+export PATH=$PATH:~/.bin
+export PATH="$PATH:~/.tf"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
