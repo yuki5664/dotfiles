@@ -37,6 +37,7 @@ cask_formulas=(
 	notion
 	kindle
 	google-cloud-sdk
+	dbeaver-community
 )
 
 brew upgrate
