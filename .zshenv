@@ -7,6 +7,9 @@ export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 export TZ=Asia/Tokyo
 
+# Not to attract path_helper
+setopt no_global_rcs
+
 #######################################
 # anyenv Settings                     #
 #######################################
