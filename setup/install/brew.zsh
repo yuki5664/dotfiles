@@ -20,6 +20,7 @@ formulas=(
 	lazydocker
 	sops
 	tree
+	zplug
 )
 
 cask_formulas=(
