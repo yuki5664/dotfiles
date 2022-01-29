@@ -98,26 +98,5 @@ path=(
   /Library/Apple/usr/bin
 )
 
-# setting for fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
-export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-
-# setting anyenv
-eval "$(anyenv init -)"
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
-# setting goenv
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-export GOPATH=$HOME/go
-export PATH="$PATH:$GOPATH/bin"
-
-# setting terraform-lsp
-export PATH=$PATH:~/.bin
-export PATH="$PATH:~/.tf"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
