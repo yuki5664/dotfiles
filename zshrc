@@ -6,10 +6,10 @@ echo hello yuki!
 source $HOME/.zshenv
 
 # Load aliases
-source $HOME/aliases.zsh
+source $HOME/.aliases.zsh
 
 # Load zplug
-source $HOME/zplug.zsh
+source $HOME/.zplug.zsh
 
 autoload -Uz compinit && compinit  # Gitの補完を有効化
 
