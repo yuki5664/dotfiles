@@ -15,9 +15,6 @@ zplug "mollifier/anyframe"
 # gitルートにcd
 zplug "mollifier/cd-gitroot"
 
-# 移動強化プラグイン
-zplug "b4b4r07/enhancd", use:init.sh
-
 # 補完強化
 zplug "zsh-users/zsh-completions"
 
