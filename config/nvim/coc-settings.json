@@ -1,7 +1,16 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
-     "go"
+    "go",
+    "typescriptreact",
+    "typescript",
+    "graphql",
+    "json",
+    "css",
+    "markdown"
   ],
+  "eslint.autoFixOnSave": true,
+  "eslint.autoFix": true,
+  "tsserver.enableJavascript": false,
   "languageserver": {
     "graphql": {
       "command": "graphql-lsp",
@@ -14,5 +23,6 @@
       "filetypes": ["terraform, tf"],
       "initializationOptions": {},
       "settings": {}
-    } 
+    }
+  }
 }

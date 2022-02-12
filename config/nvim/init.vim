@@ -92,6 +92,9 @@ nnoremap <C-e> :NERDTreeToggle<CR>
 nmap <silent> <Leader>9 :DlvToggleBreakpoint<CR>
 nmap <silent> <Leader>5 :DlvDebug<CR>
 
+" setting coc-prettier
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
 " setting coc.nvim
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
