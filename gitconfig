@@ -6,7 +6,7 @@
 
 [core]
 	editor = nvim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/tanakayuuki/.gitignore_global
 
 [fetch]
 	prune = true
