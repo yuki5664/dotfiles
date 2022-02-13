@@ -1,4 +1,5 @@
-" setting
+"=========================================================="
+" basic setting
 set number
 set mouse=a
 set noswapfile
@@ -15,12 +16,11 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 
-
+"=========================================================="
+" keymapsetting
 inoremap <silent> jj <ESC>
 nmap <Esc><Esc> :nohl<CR>
-
 let mapleader = "\<space>"
-
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<left>
@@ -32,6 +32,8 @@ inoremap "<Enter> ""<Left><CR><ESC><S-o>
 inoremap ' ''<ESC>i
 inoremap '<Enter> ''<Left><CR><ESC><S-o>
 
+"=========================================================="
+"dein plugin setting
 if &compatible
   set nocompatible
 endif
@@ -64,8 +66,11 @@ if dein#check_install()
   call dein#install()
 endif
 
+"=========================================================="
+" setting color theme
 colorscheme tokyonight
 
+"=========================================================="
 " setting FZF
 fun! FzfOmniFiles()
   let is_git = system('git status')
@@ -87,6 +92,7 @@ command! -bang -nargs=* Rg
 \ : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
 \ <bang>0)
 
+"=========================================================="
 " setting lightline
 let g:lightline = {
       \ 'active': {
@@ -95,23 +101,26 @@ let g:lightline = {
       \ }
 
 
+"=========================================================="
 " setting nerdtree
 nnoremap <C-e> :NERDTreeToggle<CR>
 
+"=========================================================="
 " setting delve
 nmap <silent> <Leader>9 :DlvToggleBreakpoint<CR>
 nmap <silent> <Leader>5 :DlvDebug<CR>
 
+"=========================================================="
 " setting coc-prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
+"=========================================================="
 " setting coc.nvim
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -125,8 +134,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+"=========================================================="
 " setting golang
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
+"=========================================================="
 " setting terraform
 let g:terraform_fmt_on_save = 1
