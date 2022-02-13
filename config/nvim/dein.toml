@@ -13,6 +13,9 @@ repo = 'neoclide/coc.nvim'
 rev = "release"
 
 [[plugins]]
+repo = 'pechorin/any-jump.vim'
+
+[[plugins]]
 repo = 'ghifarit53/tokyonight-vim'
 
 [[plugins]]
