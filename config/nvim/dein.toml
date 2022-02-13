@@ -1,0 +1,28 @@
+[[plugins]]
+repo =  'junegunn/fzf'
+build = './install --all'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = "release"
+
+[[plugins]]
+repo = 'ghifarit53/tokyonight-vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
