@@ -32,3 +32,7 @@ repo = 'vim-jp/vimdoc-ja'
 
 [[plugins]]
 repo = 'skanehira/translate.vim'
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_post_update = 'TSUpdate'
