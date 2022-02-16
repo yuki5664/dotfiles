@@ -16,9 +16,6 @@ rev = "release"
 repo = 'pechorin/any-jump.vim'
 
 [[plugins]]
-repo = 'ghifarit53/tokyonight-vim'
-
-[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
@@ -36,3 +33,11 @@ repo = 'skanehira/translate.vim'
 [[plugins]]
 repo = 'nvim-treesitter/nvim-treesitter'
 hook_post_update = 'TSUpdate'
+
+#=========================================================="
+#color theme
+[[plugins]]
+repo = 'ghifarit53/tokyonight-vim'
+
+[[plugins]]
+repo = 'ulwlu/elly.vim'
