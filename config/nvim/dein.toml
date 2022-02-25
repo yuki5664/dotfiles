@@ -34,6 +34,12 @@ repo = 'skanehira/translate.vim'
 repo = 'nvim-treesitter/nvim-treesitter'
 hook_post_update = 'TSUpdate'
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'lambdalisue/gina.vim'
+
 #=========================================================="
 #color theme
 [[plugins]]

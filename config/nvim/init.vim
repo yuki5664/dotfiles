@@ -104,7 +104,6 @@ let g:lightline = {
       \ }
       \ }
 
-
 "=========================================================="
 " setting nerdtree
 nnoremap <C-e> :NERDTreeToggle<CR>
