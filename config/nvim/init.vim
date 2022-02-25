@@ -16,7 +16,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set helplang=ja
-set termguicolors
+set background=dark
 
 "=========================================================="
 " keymapsetting
@@ -70,8 +70,9 @@ endif
 
 "=========================================================="
 " setting color theme
-colorscheme elly
-"colorscheme tokyonight
+"colorscheme elly
+colorscheme tokyonight
+"colorscheme uwu
 
 "=========================================================="
 " setting FZF
