@@ -75,26 +75,25 @@ colorscheme tokyonight
 "colorscheme uwu
 
 "=========================================================="
-" setting FZF
-fun! FzfOmniFiles()
-  let is_git = system('git status')
-  if v:shell_error
-    :Files
-  else
-    :GitFiles
-  endif
-endfun
-nnoremap <C-b> :Buffers<CR>
-nnoremap <C-g> :Rg<Space>
-nnoremap <leader><leader> :Commands<CR>
-nnoremap <C-p> :call FzfOmniFiles()<CR>
+" setting fzf-preview
+nmap <Leader>f [fzf-p]
+xmap <Leader>f [fzf-p]
 
-command! -bang -nargs=* Rg
-\ call fzf#vim#grep(
-\ 'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
-\ <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
-\ : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
-\ <bang>0)
+nnoremap <silent> [fzf-p]p     :<C-u>FzfPreviewFromResourcesRpc project_mru git<CR>
+nnoremap <silent> [fzf-p]gs    :<C-u>FzfPreviewGitStatusRpc<CR>
+nnoremap <silent> [fzf-p]ga    :<C-u>FzfPreviewGitActionsRpc<CR>
+nnoremap <silent> [fzf-p]b     :<C-u>FzfPreviewBuffersRpc<CR>
+nnoremap <silent> [fzf-p]B     :<C-u>FzfPreviewAllBuffersRpc<CR>
+nnoremap <silent> [fzf-p]o     :<C-u>FzfPreviewFromResourcesRpc buffer project_mru<CR>
+nnoremap <silent> [fzf-p]<C-o> :<C-u>FzfPreviewJumpsRpc<CR>
+nnoremap <silent> [fzf-p]g;    :<C-u>FzfPreviewChangesRpc<CR>
+nnoremap <silent> [fzf-p]/     :<C-u>FzfPreviewLinesRpc --add-fzf-arg=--no-sort --add-fzf-arg=--query="'"<CR>
+nnoremap <silent> [fzf-p]*     :<C-u>FzfPreviewLinesRpc --add-fzf-arg=--no-sort --add-fzf-arg=--query="'<C-r>=expand('<cword>')<CR>"<CR>
+nnoremap          [fzf-p]gr    :<C-u>FzfPreviewProjectGrepRpc grep<Space>
+xnoremap          [fzf-p]gr    "sy:FzfPreviewProjectGrepRpc grep<Space>-F<Space>"<C-r>=substitute(substitute(@s, '\n', '', 'g'), '/', '\\/', 'g')<CR>"
+nnoremap <silent> [fzf-p]t     :<C-u>FzfPreviewBufferTagsRpc<CR>
+nnoremap <silent> [fzf-p]q     :<C-u>FzfPreviewQuickFixRpc<CR>
+nnoremap <silent> [fzf-p]l     :<C-u>FzfPreviewLocationListRpc<CR>
 
 "=========================================================="
 " setting lightline

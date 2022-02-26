@@ -1,9 +1,11 @@
 [[plugins]]
 repo =  'junegunn/fzf'
 build = './install --all'
+merged = 0
 
 [[plugins]]
-repo = 'junegunn/fzf.vim'
+repo = 'yuki-ycino/fzf-preview.vim'
+rev = "release/rpc"
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
