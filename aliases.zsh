@@ -9,3 +9,5 @@ alias lla="ls -la"
 ## doceker
 alias lzd='lazydocker'
 alias dc='docker compose'
+
+alias pkill= 'kill -9 $(lsof -t -i:$1)'
