@@ -143,3 +143,7 @@ autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.org
 "=========================================================="
 " setting terraform
 let g:terraform_fmt_on_save = 1
+
+"=========================================================="
+" setting translate
+nmap gl <Plug>(Translate)
