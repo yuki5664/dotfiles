@@ -17,6 +17,7 @@ set updatetime=300
 set shortmess+=c
 set helplang=ja
 set background=dark
+set confirm
 
 "=========================================================="
 " keymapsetting
