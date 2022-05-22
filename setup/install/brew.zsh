@@ -21,6 +21,7 @@ formulas=(
 	sops
 	tree
 	zplug
+	httpie
 )
 
 cask_formulas=(
