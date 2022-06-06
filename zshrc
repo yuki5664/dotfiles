@@ -56,3 +56,6 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 #######################################
 export PATH=$PATH:~/.bin
 export PATH="$PATH:~/.tf"
+
+source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
