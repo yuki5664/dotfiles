@@ -22,6 +22,8 @@ formulas=(
 	tree
 	zplug
 	httpie
+	istioctl
+	helm
 )
 
 cask_formulas=(
