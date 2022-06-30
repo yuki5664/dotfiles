@@ -24,6 +24,7 @@ formulas=(
 	httpie
 	istioctl
 	helm
+	docker-machine-driver-vmware
 )
 
 cask_formulas=(
