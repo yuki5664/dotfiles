@@ -59,3 +59,39 @@ export PATH="$PATH:~/.tf"
 
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+#######################################
+# funcion to run npm using fzf        #
+#######################################
+function fzf_npm_scripts() {
+  if [ ! -e package.json ]; then
+    echo 'fzf_npm_scripts'
+    echo 'There is no package.json'
+    zle send-break
+    return 1
+  fi
+  if ! type jq > /dev/null; then
+    echo 'fzf_npm_scripts'
+    echo 'jq command is required'
+    zle send-break
+    return 1
+  fi
+
+  local scripts=`jq -r '.scripts | to_entries | .[] | .key + " = " + .value' package.json 2>/dev/null || echo ''`
+  if [[ -z $scripts ]]; then
+    echo 'fzf_npm_scripts'
+    echo 'There is no scripts in package.json'
+    zle send-break
+    return 1
+  fi
+  local selected=`echo $scripts | FZF_DEFAULT_OPTS='' fzf --height=50% --reverse --exit-0 | awk -F ' = ' '{ print $1}'`
+
+  zle reset-prompt
+  if [[ -z $selected ]]; then
+    return 0
+  fi
+  BUFFER="npm run $selected"
+  zle accept-line
+}
+zle -N fzf_npm_scripts
+bindkey "^Xn" fzf_npm_scripts
