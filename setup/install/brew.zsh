@@ -25,6 +25,7 @@ formulas=(
 	istioctl
 	helm
 	docker-machine-driver-vmware
+	istioctl
 )
 
 cask_formulas=(
@@ -43,6 +44,7 @@ cask_formulas=(
 	kindle
 	google-cloud-sdk
 	dbeaver-community
+	lens
 )
 
 brew upgrate
