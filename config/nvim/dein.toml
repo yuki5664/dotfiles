@@ -53,3 +53,6 @@ repo = 'ulwlu/elly.vim'
 [[plugins]]
 repo = 'mangeshrex/uwu.vim'
 
+[[plugins]]
+repo = 'EdenEast/nightfox.nvim'
+
