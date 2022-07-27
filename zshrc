@@ -61,6 +61,11 @@ source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 #######################################
+# kubectl autocomplete Settings       #
+#######################################
+source <(kubectl completion zsh)
+
+#######################################
 # funcion to run npm using fzf        #
 #######################################
 function fzf_npm_scripts() {
