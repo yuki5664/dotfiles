@@ -56,3 +56,5 @@ repo = 'mangeshrex/uwu.vim'
 [[plugins]]
 repo = 'EdenEast/nightfox.nvim'
 
+[[plugins]]
+repo = 'colors/hybrid.vim'

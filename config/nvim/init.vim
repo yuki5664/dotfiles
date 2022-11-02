@@ -72,9 +72,10 @@ endif
 "=========================================================="
 " setting color theme
 "colorscheme elly
-colorscheme tokyonight
+"colorscheme tokyonight
 "colorscheme uwu
 "colorscheme Nordfox
+colorscheme hybrid
 
 "=========================================================="
 " setting fzf-preview
