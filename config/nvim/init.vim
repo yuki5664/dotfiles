@@ -96,6 +96,7 @@ xnoremap          [fzf-p]gr    "sy:FzfPreviewProjectGrepRpc<Space>-F<Space>"<C-r
 nnoremap <silent> [fzf-p]t     :<C-u>FzfPreviewBufferTagsRpc<CR>
 nnoremap <silent> [fzf-p]q     :<C-u>FzfPreviewQuickFixRpc<CR>
 nnoremap <silent> [fzf-p]l     :<C-u>FzfPreviewLocationListRpc<CR>
+nmap <silent> gr :<C-u>CocCommand fzf-preview.CocReferences<CR>
 
 "=========================================================="
 " setting lightline
@@ -124,7 +125,6 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
