@@ -42,6 +42,9 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'lambdalisue/gina.vim'
 
+[[plugins]]
+repo = 'tmux-plugins/vim-tmux-focus-events'
+
 #=========================================================="
 #color theme
 [[plugins]]
