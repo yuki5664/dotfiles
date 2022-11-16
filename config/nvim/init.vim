@@ -18,6 +18,7 @@ set shortmess+=c
 set helplang=ja
 set background=dark
 set confirm
+set termguicolors
 
 "=========================================================="
 " keymapsetting
@@ -73,9 +74,9 @@ endif
 " setting color theme
 "colorscheme elly
 "colorscheme tokyonight
-colorscheme uwu
+"colorscheme uwu
 "colorscheme Nordfox
-"colorscheme hybrid
+colorscheme base16-default-dark
 
 "=========================================================="
 " setting fzf-preview
