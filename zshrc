@@ -100,3 +100,9 @@ function fzf_npm_scripts() {
 }
 zle -N fzf_npm_scripts
 bindkey "^Xn" fzf_npm_scripts
+
+#######################################
+# Coogle Cloud CDK Setting            #
+#######################################
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
