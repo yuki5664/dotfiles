@@ -4,6 +4,12 @@ local act = wezterm.action
 local config = {
   -- colors
   color_scheme = '3024 Night',
+  -- font
+  font = wezterm.font_with_fallback({
+    "JetBrains Mono",
+    "Noto Color Emoji",
+    "Symbols Nerd Font Mono",
+  }),
 }
 
 
