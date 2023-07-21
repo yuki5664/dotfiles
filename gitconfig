@@ -11,6 +11,9 @@
 [fetch]
 	prune = true
 
+[rerere]
+	enabled = true
+
 [push]
 	default = current
 
