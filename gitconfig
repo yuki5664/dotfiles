@@ -24,4 +24,5 @@
 	trustExitCode = true
 
 [alias]
+	sw = switch
 	amend = commit --amend
