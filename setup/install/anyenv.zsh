@@ -1,3 +1,6 @@
+#!/bin/zsh
+source ${HOME}/dotfiles/setup/util.zsh
+
 util::info 'install anyenv...'
 
 if [[ ! -e ${HOME}/.anyenv ]]; then
