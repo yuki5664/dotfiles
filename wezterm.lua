@@ -10,6 +10,8 @@ local config = {
     "Noto Color Emoji",
     "Symbols Nerd Font Mono",
   }),
+  -- scrollback
+  scrollback_lines = 10000,
 }
 
 
