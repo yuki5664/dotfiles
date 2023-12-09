@@ -38,11 +38,9 @@ eval "$(anyenv init -)"
 #######################################
 # Golang Settings                     #
 #######################################
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-export GOPATH=$HOME/go
+export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="/opt/homebrew/opt/go@1.20/bin:$PATH"
 
 #######################################
 # Fzf Settings                        #
@@ -104,5 +102,5 @@ bindkey "^Xn" fzf_npm_scripts
 #######################################
 # Coogle Cloud CDK Setting            #
 #######################################
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+#source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+#source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
