@@ -25,3 +25,6 @@ vendor/
 # VSCode extensions
 ## xyz.local-history
 **/.history/**
+
+# envrc
+.envrc

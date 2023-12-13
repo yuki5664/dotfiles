@@ -30,6 +30,12 @@ path=(
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 #######################################
+# direnv Settings                     #
+#######################################
+eval "$(direnv hook zsh)"
+export EDITOR='nvim'
+
+#######################################
 # anyenv Settings                     #
 #######################################
 export PATH="$HOME/.anyenv/bin:$PATH"
