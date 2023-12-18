@@ -11,7 +11,7 @@ local config = {
     "Symbols Nerd Font Mono",
   }),
   -- scrollback
-  scrollback_lines = 10000,
+  scrollback_lines = 100000,
 }
 
 
