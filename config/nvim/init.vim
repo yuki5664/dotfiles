@@ -19,6 +19,7 @@ set helplang=ja
 set background=dark
 set confirm
 set termguicolors
+set eol
 
 "=========================================================="
 " keymapsetting
