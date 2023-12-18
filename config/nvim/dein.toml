@@ -51,9 +51,6 @@ repo = 'tmux-plugins/vim-tmux-focus-events'
 repo = 'ghifarit53/tokyonight-vim'
 
 [[plugins]]
-repo = 'ulwlu/elly.vim'
-
-[[plugins]]
 repo = 'mangeshrex/uwu.vim'
 
 [[plugins]]
