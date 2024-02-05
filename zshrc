@@ -45,6 +45,11 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 #######################################
+# npm Settings                        #
+#######################################
+export PATH="$PATH:$(npm config get prefix)/bin"
+
+#######################################
 # Golang Settings                     #
 #######################################
 export GOPATH="$HOME/go"
