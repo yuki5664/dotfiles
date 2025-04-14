@@ -1,6 +1,6 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
-  // Vimのkeybaindingの設定
+    // Vimのkeybaindingの設定
   {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
@@ -111,5 +111,49 @@
   {
     "key": "ctrl+j",
     "command": "workbench.action.terminal.focus"
-  }
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.terminal.accessibleBufferGoToPreviousCommand",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "alt+up",
+    "command": "-workbench.action.terminal.accessibleBufferGoToPreviousCommand",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.goToTopHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "cmd+up",
+    "command": "-editor.action.goToTopHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "right",
+    "command": "-editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  // --------------------------------------------------
+  // GitHub Copilot Chat settings
+  // --------------------------------------------------
+  {
+    "key": "cmd+enter",
+    "command": "github.copilot.chat.send",
+    "when": "github.copilot.chat.focus && inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-github.copilot.chat.send",
+    "when": "github.copilot.chat.focus && inputFocus"
+  },
 ]
+
