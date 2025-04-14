@@ -54,7 +54,7 @@ export PATH="$PATH:$(npm config get prefix)/bin"
 #######################################
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="/opt/homebrew/opt/go@1.20/bin:$PATH"
+export PATH="/opt/homebrew/opt/go@1.22/bin:$PATH"
 
 #######################################
 # Fzf Settings                        #
@@ -118,6 +118,13 @@ function fzf_npm_scripts() {
 }
 zle -N fzf_npm_scripts
 bindkey "^Xn" fzf_npm_scripts
+
+#######################################
+# starship Setting            #
+#######################################
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=/Users/yukitanaka/dotfiles/config/starship.toml
+
 
 #######################################
 # Coogle Cloud CDK Setting            #
