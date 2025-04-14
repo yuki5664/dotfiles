@@ -1,0 +1,9 @@
+[gcloud]
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+symbol = ""
+
+[kubernetes]
+format = '[$symbol$context( \($namespace\))]($style) '
+symbol = '☸️ '
+style = 'bold green'
+disabled = false
