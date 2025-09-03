@@ -29,6 +29,7 @@ formulas=(
 	helm
 	docker-machine-driver-vmware
 	istioctl
+	mise
 )
 
 cask_formulas=(
