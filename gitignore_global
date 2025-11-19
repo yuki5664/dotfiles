@@ -28,3 +28,7 @@ vendor/
 
 # envrc
 .envrc
+
+# claude code
+.claude/settings.local.json
+.mcp.json
